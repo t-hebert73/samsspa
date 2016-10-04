@@ -1,0 +1,215 @@
+html, body {
+  height: 100%; }
+  html h1, html h2, html h3, html h4, html h5, body h1, body h2, body h3, body h4, body h5 {
+    font-family: "Tangerine", cursive;
+    text-align: center; }
+  html p, html div, html span, html li, body p, body div, body span, body li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 26px; }
+  html .clear, body .clear {
+    clear: both; }
+  html .main-heading, body .main-heading {
+    font-size: 66px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #b39915; }
+    html .main-heading.extra-margin, body .main-heading.extra-margin {
+      margin-bottom: 45px; }
+  html .navbar, body .navbar {
+    background-color: white; }
+    html .navbar .navbar-nav, body .navbar .navbar-nav {
+      margin-left: 25px;
+      float: right; }
+      html .navbar .navbar-nav li a, body .navbar .navbar-nav li a {
+        font-family: "Tangerine", cursive;
+        color: black;
+        padding: 40px 20px;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: normal; }
+        html .navbar .navbar-nav li a:hover, html .navbar .navbar-nav li a:focus, body .navbar .navbar-nav li a:hover, body .navbar .navbar-nav li a:focus {
+          background-color: rgba(255, 229, 229, 0.2);
+          cursor: pointer; }
+    html .navbar .brand, body .navbar .brand {
+      position: relative;
+      background-image: url("../images/samsspa-logo.jpg");
+      font-size: 0;
+      width: 220px;
+      height: 100px;
+      background-size: contain;
+      display: block;
+      background-repeat: no-repeat;
+      margin: 5px 10px; }
+  html .banner, body .banner {
+    margin-top: 110px; }
+    html .banner .overlay-text, body .banner .overlay-text {
+      position: absolute;
+      top: 240px;
+      width: 100%; }
+      html .banner .overlay-text h1, body .banner .overlay-text h1 {
+        font-family: "Tangerine", cursive;
+        font-size: 120px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3); }
+    html .banner .slickslider .stock-1, body .banner .slickslider .stock-1 {
+      background-image: url("../images/stock-spa1.jpg"); }
+    html .banner .slickslider .stock-2, body .banner .slickslider .stock-2 {
+      background-image: url("../images/stock-spa2.jpg"); }
+    html .banner .slickslider .stock-3, body .banner .slickslider .stock-3 {
+      background-image: url("../images/stock-spa3.jpg"); }
+    html .banner .slickslider .stock-4, body .banner .slickslider .stock-4 {
+      background-image: url("../images/stock-spa4.jpg"); }
+    html .banner .slickslider .cover, body .banner .slickslider .cover {
+      background-size: cover;
+      width: 100%;
+      height: 450px; }
+  html .padded, body .padded {
+    padding: 35px 0; }
+  html .about, body .about {
+    background-color: #FFFFFF;
+    text-align: center; }
+    html .about p, body .about p {
+      margin-bottom: 5px; }
+    html .about .row, body .about .row {
+      display: -ms-flexbox;
+      display: flex; }
+    html .about .located, body .about .located {
+      margin-top: 20px; }
+    html .about .bg-container .aveda, body .about .bg-container .aveda {
+      background-image: url("../images/Avedalogo.png");
+      width: 264px;
+      height: 139px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: white;
+      margin: 15px auto 0; }
+    html .about .bg-container .outside-salon, body .about .bg-container .outside-salon {
+      background-image: url("../images/salon-front.JPG");
+      width: 100%;
+      height: 350px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: white;
+      box-shadow: 0 0 10px #777; }
+  html .services, body .services {
+    background-color: #ffe5e5; }
+    html .services .service-groups, body .services .service-groups {
+      background-color: white;
+      box-shadow: 0 0 10px #888;
+      padding: 30px; }
+    html .services .service-group.left, html .services .service-group.right, body .services .service-group.left, body .services .service-group.right {
+      width: 50%; }
+    html .services .service-group.left, body .services .service-group.left {
+      float: left; }
+    html .services .service-group.right, body .services .service-group.right {
+      float: right; }
+    html .services .service-group .service-label, body .services .service-group .service-label {
+      font-weight: bold;
+      font-family: "Tangerine", cursive;
+      font-size: 34px;
+      color: #b39915;
+      line-height: normal; }
+    html .services .service-group .disclaimer, body .services .service-group .disclaimer {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    html .services .service-group ul, body .services .service-group ul {
+      padding-left: 15px;
+      padding-bottom: 25px; }
+      html .services .service-group ul li, body .services .service-group ul li {
+        list-style-type: none;
+        padding: 3px 5px 3px 1.5em;
+        font-size: 16px; }
+        html .services .service-group ul li:before, body .services .service-group ul li:before {
+          font-family: FontAwesome;
+          content: '\f219';
+          font-size: 16px;
+          color: #b39915;
+          display: inline-block;
+          margin-left: -1.5em;
+          /* same as padding-left set on li */
+          width: 1.5em;
+          /* same as padding-left set on li */ }
+  html .gallery, body .gallery {
+    background-color: #f0f0f5;
+    text-align: center; }
+    html .gallery .gallery-container .slickslider .salon-1, body .gallery .gallery-container .slickslider .salon-1 {
+      background-image: url("../images/carousel/nailpolish.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-2, body .gallery .gallery-container .slickslider .salon-2 {
+      background-image: url("../images/carousel/nails.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-3, body .gallery .gallery-container .slickslider .salon-3 {
+      background-image: url("../images/carousel/tweezers.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-4, body .gallery .gallery-container .slickslider .salon-4 {
+      background-image: url("../images/carousel/gallery4.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-5, body .gallery .gallery-container .slickslider .salon-5 {
+      background-image: url("../images/carousel/gallery5.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-6, body .gallery .gallery-container .slickslider .salon-6 {
+      background-image: url("../images/carousel/gallery6.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-7, body .gallery .gallery-container .slickslider .salon-7 {
+      background-image: url("../images/carousel/gallery7.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-8, body .gallery .gallery-container .slickslider .salon-8 {
+      background-image: url("../images/carousel/gallery8.jpg"); }
+    html .gallery .gallery-container .slickslider .salon-9, body .gallery .gallery-container .slickslider .salon-9 {
+      background-image: url("../images/carousel/gallery9.jpg"); }
+    html .gallery .gallery-container .slickslider .slick-slide, html .gallery .gallery-container .slickslider .slick-track, body .gallery .gallery-container .slickslider .slick-slide, body .gallery .gallery-container .slickslider .slick-track {
+      background-color: #f0f0f5; }
+    html .gallery .gallery-container .slickslider .slide-content, body .gallery .gallery-container .slickslider .slide-content {
+      margin: 5px 20px;
+      background-color: #f0f0f5;
+      box-shadow: 0 0 10px #777; }
+    html .gallery .gallery-container .slickslider .cover, body .gallery .gallery-container .slickslider .cover {
+      background-size: cover;
+      width: 100%;
+      height: 300px; }
+      html .gallery .gallery-container .slickslider .cover a, body .gallery .gallery-container .slickslider .cover a {
+        display: block;
+        height: 100%; }
+    html .gallery .gallery-container .gallery-help, body .gallery .gallery-container .gallery-help {
+      padding-top: 15px; }
+  html .contact, body .contact {
+    text-align: center; }
+    html .contact .contact-info .company, body .contact .contact-info .company {
+      margin-top: 15px; }
+    html .contact .contact-info span, html .contact .contact-info div, body .contact .contact-info span, body .contact .contact-info div {
+      font-size: 18px; }
+    html .contact .contact-info .left, body .contact .contact-info .left {
+      padding-right: 5px; }
+    html .contact .contact-info .right, body .contact .contact-info .right {
+      padding-left: 5px; }
+    html .contact .any-questions, body .contact .any-questions {
+      margin: 35px 0 20px; }
+    html .contact .contact-form, body .contact .contact-form {
+      width: 60%;
+      margin: 15px auto; }
+      html .contact .contact-form button, body .contact .contact-form button {
+        background-color: #b39915;
+        color: white;
+        font-size: 16px; }
+      html .contact .contact-form textarea, body .contact .contact-form textarea {
+        min-height: 150px; }
+  html footer, body footer {
+    background-color: black;
+    color: #e6e6e6; }
+    html footer .left, body footer .left {
+      float: left; }
+    html footer .right, body footer .right {
+      float: right; }
+    html footer .social-icon, body footer .social-icon {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      margin-left: 5px;
+      background-size: cover; }
+      html footer .social-icon a, body footer .social-icon a {
+        display: block;
+        height: 100%; }
+    html footer .facebook, body footer .facebook {
+      background-image: url("../images/facebook.png"); }
+    html footer .instagram, body footer .instagram {
+      background-image: url("../images/instagram.png"); }
+
+/*# sourceMappingURL=app.css.map */

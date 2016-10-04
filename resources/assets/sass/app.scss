@@ -1,0 +1,418 @@
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//SCREEN SIZE DEFINITIONS
+
+$portraitMobile: "(max-width: 479px)";
+$phone: $portraitMobile;
+
+$gtPhone: "(min-width: 480px)";
+$notPhone: $gtPhone;
+
+$landscapeMobile: "(min-width: 480px) and (max-width: 767px)";
+$portraitTablet: $landscapeMobile;
+$phoneWide: $landscapeMobile;
+
+$mobile: "(max-width: 767px)";
+$gtMobile: "(min-width: 768px)";
+
+$landscapeTablet: "(min-width: 768px) and (max-width: 979px)";
+$tabletWide: $landscapeTablet;
+
+$ltDesktop: "(max-width: 979px)";
+$gtTablet: "(min-width: 980px)";
+
+$desktop: "(min-width: 980px) and (max-width: 1199px)";
+
+$gtDesktop: "(min-width: 1200px)";
+$ltLarge: "(max-width: 1199px)";
+
+$wide: "(min-width: 1200px) and (max-width: 1499px)";
+
+$ltSuper: "(max-width: 1499px)";
+$gtWide: "(min-width: 1500px)";
+
+$super: "(min-width: 1500px) and (max-width: 1899px)";
+
+$ltUltra: "(max-width: 1899px)";
+$gtSuper: "(min-width: 1900px)";
+
+$ultra: "(min-width: 1900px) and (max-width: 2499px)";
+
+$ltLarger: "(max-width: 2499px)";
+$gtUltra: "(min-width: 2500px)";
+
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)";
+
+$small: $tabletWide;
+$medium: $desktop;
+$normal: $desktop;
+$large: $gtDesktop;
+$larger: $gtUltra;
+
+$primary-font: 'Tangerine', cursive;
+$secondary-font: 'Open Sans', sans-serif;
+
+$pink: #ffe5e5;
+$gold: #b39915;
+$black: #000000;
+$grey: #f0f0f5;
+$white: #FFFFFF;
+
+html, body {
+  height: 100%;
+
+  h1, h2, h3, h4, h5 {
+    font-family: $primary-font;
+    text-align: center;
+  }
+
+  p, div, span, li {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .main-heading {
+    font-size: 66px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: $gold;
+
+    &.extra-margin {
+      margin-bottom: 45px;
+    }
+  }
+
+  .navbar {
+    background-color: white;
+
+    .navbar-nav {
+      margin-left: 25px;
+      float: right;
+
+      li {
+        a {
+          font-family: $primary-font;
+          color: black;
+          padding: 40px 20px;
+          font-size: 32px;
+          font-weight: bold;
+          line-height: normal;
+
+          &:hover, &:focus {
+            background-color: rgba($pink, 0.2);
+            cursor: pointer;
+          }
+
+        }
+      }
+    }
+
+    .brand {
+      position: relative;
+      background-image: url('../images/samsspa-logo.jpg');
+      font-size: 0;
+      width: 220px;
+      height: 100px;
+      background-size: contain;
+      display: block;
+      background-repeat: no-repeat;
+      margin: 5px 10px;
+    }
+  }
+
+  .banner {
+    margin-top: 110px;
+
+    .overlay-text {
+      position: absolute;
+      top: 240px;
+      width: 100%;
+
+      h1 {
+        font-family: $primary-font;
+        font-size: 120px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .slickslider {
+      .stock-1 {
+        background-image: url('../images/stock-spa1.jpg');
+      }
+      .stock-2 {
+        background-image: url('../images/stock-spa2.jpg');
+      }
+      .stock-3 {
+        background-image: url('../images/stock-spa3.jpg');
+      }
+      .stock-4 {
+        background-image: url('../images/stock-spa4.jpg');
+      }
+
+      .cover {
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+      }
+    }
+  }
+
+  .padded {
+    padding: 35px 0;
+  }
+
+  .about {
+    background-color: $white;
+    text-align: center;
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .located {
+      margin-top: 20px;
+    }
+
+    .bg-container {
+
+      .aveda {
+        background-image: url('../images/Avedalogo.png');
+        width: 264px;
+        height: 139px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+        margin: 15px auto 0;
+      }
+
+      .outside-salon{
+        background-image: url('../images/salon-front.JPG');
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+        -moz-box-shadow: 0 0 5px #777;
+        -webkit-box-shadow: 0 0 5px #777;
+        box-shadow: 0 0 10px #777;
+      }
+    }
+  }
+  .services {
+    background-color: rgba($pink, 1);
+
+    .service-groups {
+      background-color: rgba(white, 1);
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px #888;
+      box-shadow: 0 0 10px #888;
+      padding: 30px;
+    }
+
+    .service-group {
+
+      &.left, &.right {
+        width: 50%;
+      }
+
+      &.left {
+        float: left;
+      }
+
+      &.right {
+        float: right;
+      }
+
+      .service-label {
+        font-weight: bold;
+        font-family: $primary-font;
+        font-size: 34px;
+        color: $gold;
+        line-height: normal;
+      }
+
+      .disclaimer {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        padding-left: 15px;
+        padding-bottom: 25px;
+
+        li {
+          list-style-type: none;
+          padding: 3px 5px 3px 1.5em;
+          font-size: 16px;
+
+          &:before {
+            font-family: FontAwesome;
+            content: '\f219';
+            font-size: 16px;
+            color: $gold;
+            display: inline-block;
+            margin-left: -1.5em; /* same as padding-left set on li */
+            width: 1.5em; /* same as padding-left set on li */
+          }
+        }
+      }
+    }
+  }
+
+  .gallery{
+    background-color: $grey;
+    text-align: center;
+
+    .gallery-container {
+
+      .slickslider {
+        //margin: 0 25px;
+
+        .salon-1 {
+          background-image: url('../images/carousel/nailpolish.jpg');
+        }
+        .salon-2 {
+          background-image: url('../images/carousel/nails.jpg');
+        }
+        .salon-3 {
+          background-image: url('../images/carousel/tweezers.jpg');
+        }
+        .salon-4 {
+          background-image: url('../images/carousel/gallery4.jpg');
+        }
+        .salon-5 {
+          background-image: url('../images/carousel/gallery5.jpg');
+        }
+        .salon-6 {
+          background-image: url('../images/carousel/gallery6.jpg');
+        }
+        .salon-7 {
+          background-image: url('../images/carousel/gallery7.jpg');
+        }
+        .salon-8 {
+          background-image: url('../images/carousel/gallery8.jpg');
+        }
+        .salon-9 {
+          background-image: url('../images/carousel/gallery9.jpg');
+        }
+
+        .slick-slide, .slick-track{
+          background-color: $grey;
+        }
+
+        .slide-content{
+          margin: 5px 20px;
+          background-color: $grey;
+          -moz-box-shadow: 0 0 5px #777;
+          -webkit-box-shadow: 0 0 5px #777;
+          box-shadow: 0 0 10px #777;
+        }
+
+        .cover {
+          background-size: cover;
+          width: 100%;
+          height: 300px;
+
+          a {
+            display: block;
+            height: 100%;
+          }
+
+        }
+      }
+
+      .gallery-help {
+        padding-top: 15px;
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+
+    .contact-info {
+
+      .company {
+        margin-top: 15px;
+      }
+
+      span, div {
+        font-size: 18px;
+      }
+
+      .left {
+        padding-right: 5px;
+      }
+
+      .right {
+        padding-left: 5px;
+      }
+    }
+
+    .any-questions {
+      margin: 35px 0 20px;
+    }
+
+    .contact-form {
+      width: 60%;
+      margin: 15px auto;
+
+      button {
+        background-color: $gold;
+        color: white;
+        font-size: 16px;
+      }
+
+      textarea {
+        min-height: 150px;
+      }
+    }
+  }
+
+  footer {
+    background-color: black;
+    color: #e6e6e6;
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      margin-left: 5px;
+      background-size: cover;
+
+      a {
+        display: block;
+        height: 100%;
+      }
+    }
+
+    .facebook {
+      background-image: url('../images/facebook.png');
+    }
+
+    .instagram {
+      background-image: url('../images/instagram.png');
+    }
+  }
+}
