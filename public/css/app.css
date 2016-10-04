@@ -31,6 +31,8 @@ html, body {
         html .navbar .navbar-nav li a:hover, html .navbar .navbar-nav li a:focus, body .navbar .navbar-nav li a:hover, body .navbar .navbar-nav li a:focus {
           background-color: rgba(255, 229, 229, 0.2);
           cursor: pointer; }
+      html .navbar .navbar-nav li.active a, body .navbar .navbar-nav li.active a {
+        background-color: rgba(255, 229, 229, 0.2); }
     html .navbar .brand, body .navbar .brand {
       position: relative;
       background-image: url("../images/samsspa-logo.jpg");

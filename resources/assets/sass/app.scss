@@ -102,14 +102,20 @@ html, body {
           font-weight: bold;
           line-height: normal;
 
-          &:hover, &:focus {
+          &:hover, &:focus, {
             background-color: rgba($pink, 0.2);
             cursor: pointer;
           }
+        }
+      }
 
+      li.active{
+        a{
+          background-color: rgba($pink, 0.2);
         }
       }
     }
+
 
     .brand {
       position: relative;
