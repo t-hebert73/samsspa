@@ -219,7 +219,7 @@
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-1 cover">
-                                    <a href="{{URL::asset('/images/carousel/nailpolish.jpg')}}" class="cb-gallery-image" rel="about"></a>
+                                    <a href="{{URL::asset('/images/carousel/nailpolish.JPG')}}" class="cb-gallery-image" rel="about"></a>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-2 cover">
-                                    <a href="{{URL::asset('/images/carousel/nails.jpg')}}" class="cb-gallery-image" rel="about"></a>
+                                    <a href="{{URL::asset('/images/carousel/nails.JPG')}}" class="cb-gallery-image" rel="about"></a>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +235,7 @@
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-5 cover">
-                                    <a href="{{URL::asset('/images/carousel/gallery5.jpg')}}" class="cb-gallery-image" rel="about"></a>
+                                    <a href="{{URL::asset('/images/carousel/gallery5.JPG')}}" class="cb-gallery-image" rel="about"></a>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-3 cover">
-                                    <a href="{{URL::asset('/images/carousel/tweezers.jpg')}}" class="cb-gallery-image" rel="about"></a>
+                                    <a href="{{URL::asset('/images/carousel/tweezers.JPG')}}" class="cb-gallery-image" rel="about"></a>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-6 cover">
-                                    <a href="{{URL::asset('/images/carousel/gallery6.jpg')}}" class="cb-gallery-image" rel="about"></a>
+                                    <a href="{{URL::asset('/images/carousel/gallery6.JPG')}}" class="cb-gallery-image" rel="about"></a>
                                 </div>
                             </div>
                         </div>
