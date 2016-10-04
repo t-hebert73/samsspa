@@ -43,7 +43,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a class="nav-anchor" data-id="#top_banner">Welcome</a></li>
+                    <li class="active first"><a class="nav-anchor" data-id="#top_banner">Welcome</a></li>
                     <li><a class="nav-anchor" data-id="#about">About</a></li>
                     <li><a class="nav-anchor" data-id="#services">Services</a></li>
                     <li><a class="nav-anchor" data-id="#gallery">Gallery</a></li>
@@ -376,7 +376,7 @@
             $(div).click(function() {
 
                 $('body').animate({
-                    scrollTop: $($(div).data('id')).offset().top,
+                    scrollTop: $($(div).data('id')).offset().top + -110,
                     easing: "swing"
                 }, 1000) ;
 

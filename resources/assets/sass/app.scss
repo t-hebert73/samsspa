@@ -113,6 +113,12 @@ html, body {
         a{
           background-color: rgba($pink, 0.2);
         }
+
+        &.first{
+          a{
+            background-color: $white;
+          }
+        }
       }
     }
 
