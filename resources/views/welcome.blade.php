@@ -281,11 +281,9 @@
         <h2 class="main-heading">Contact</h2>
 
         <div class="contact-info">
-            <span class="left">Samantha Venditti</span>
-            <span class="right">289-696-1586</span>
+            <span class="">Samantha Venditti</span>
 
             <div class="company">Sam's Spa</div>
-            <div class="location">Alesco Salon</div>
             <div class="address">133 Front Street North, Thorold, Ontario</div>
             <div class="phone">289-696-1586</div>
         </div>
