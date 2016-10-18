@@ -107,7 +107,7 @@
 
             <div class="service-group left">
                 <div class="service">
-                    <div class="service-label">Skin Care (AVEDA Customized Facials)</div>
+                    <div class="service-label">AVEDA Customized Facials</div>
 
                     <ul>
                         <li>30 minutes – $30</li>

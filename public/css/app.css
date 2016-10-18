@@ -24,9 +24,23 @@ html, body {
       margin-bottom: 45px; }
   html .navbar, body .navbar {
     background-color: white; }
+    html .navbar .navbar-toggle, body .navbar .navbar-toggle {
+      background-color: #b39915;
+      min-width: 60px;
+      margin-top: 35px;
+      margin-right: 30px; }
+      html .navbar .navbar-toggle .icon-bar, body .navbar .navbar-toggle .icon-bar {
+        background-color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; }
     html .navbar .navbar-nav, body .navbar .navbar-nav {
       margin-left: 25px;
       float: right; }
+      @media (max-width: 767px) {
+        html .navbar .navbar-nav, body .navbar .navbar-nav {
+          float: none;
+          margin: 0; } }
       html .navbar .navbar-nav li a, body .navbar .navbar-nav li a {
         font-family: "Tangerine", cursive;
         color: black;
@@ -38,6 +52,10 @@ html, body {
           html .navbar .navbar-nav li a, body .navbar .navbar-nav li a {
             font-size: 28px;
             padding: 40px 15px; } }
+        @media (max-width: 767px) {
+          html .navbar .navbar-nav li a, body .navbar .navbar-nav li a {
+            padding: 10px 15px;
+            text-align: center; } }
         html .navbar .navbar-nav li a:hover, html .navbar .navbar-nav li a:focus, body .navbar .navbar-nav li a:hover, body .navbar .navbar-nav li a:focus {
           background-color: rgba(255, 229, 229, 0.2);
           cursor: pointer; }
