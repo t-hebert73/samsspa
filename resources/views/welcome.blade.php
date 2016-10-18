@@ -389,7 +389,18 @@
 
         if ($cb_images.length) {
             $cb_images.each(function () {
-                $(this).colorbox({rel: $(this).attr('rel')});
+                $(this).colorbox({
+                    rel: $(this).attr('rel'),
+                    maxWidth: '95%',
+                    maxHeight: '95%'
+                });
+            });
+
+            $(window).resize(function(){
+                $.colorbox.resize({
+                    width: window.innerWidth > parseInt(cboxOptions.maxWidth) ? cboxOptions.maxWidth : cboxOptions.width,
+                    height: window.innerHeight > parseInt(cboxOptions.maxHeight) ? cboxOptions.maxHeight : cboxOptions.height
+                });
             });
         }
 
