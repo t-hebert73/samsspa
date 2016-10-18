@@ -109,19 +109,18 @@ html, body {
         }
       }
 
-      li.active{
-        a{
+      li.active {
+        a {
           background-color: rgba($pink, 0.2);
         }
 
-        &.first{
-          a{
+        &.first {
+          a {
             background-color: $white;
           }
         }
       }
     }
-
 
     .brand {
       position: relative;
@@ -156,8 +155,9 @@ html, body {
 
     .slickslider {
       .stock-1 {
-        background-image: url('../images/stock-spa1.jpg');
+        background-image: url('../images/main-banner.jpg');
       }
+      /*
       .stock-2 {
         background-image: url('../images/stock-spa2.jpg');
       }
@@ -167,9 +167,11 @@ html, body {
       .stock-4 {
         background-image: url('../images/stock-spa4.jpg');
       }
+      */
 
       .cover {
         background-size: cover;
+        background-position: bottom center;
         width: 100%;
         height: 450px;
       }
@@ -226,6 +228,10 @@ html, body {
   .services {
     background-color: rgba($pink, 1);
 
+    p {
+      text-align: center;
+    }
+
     .service-groups {
       background-color: rgba(white, 1);
       -moz-box-shadow: 0 0 5px #888;
@@ -238,6 +244,7 @@ html, body {
 
       &.left, &.right {
         width: 50%;
+        text-align: center;
       }
 
       &.left {
@@ -384,10 +391,36 @@ html, body {
         background-color: $gold;
         color: white;
         font-size: 16px;
+
+        &:hover {
+          background-color: darken($gold, 5%);
+        }
       }
 
       textarea {
         min-height: 150px;
+      }
+    }
+  }
+
+  .subscribe {
+    background-color: transparentize($gold, 0.3);
+
+    #mc_embed_signup {
+
+      label {
+        font-size: 22px;
+        font-weight: normal;
+      }
+
+      .button {
+        background-color: white;
+        color: black;
+        font-size: 16px;
+
+        &:hover {
+          background-color: darken($white, 15%);
+        }
       }
     }
   }

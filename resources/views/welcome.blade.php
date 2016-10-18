@@ -59,18 +59,6 @@
         <div class="image">
             <div class="stock-1 cover"></div>
         </div>
-
-        <div class="image">
-            <div class="stock-2 cover"></div>
-        </div>
-
-        <div class="image">
-            <div class="stock-3 cover"></div>
-        </div>
-
-        <div class="image">
-            <div class="stock-4 cover"></div>
-        </div>
     </div>
 
     <div class="overlay-text">
@@ -179,6 +167,8 @@
             </div>
 
             <div class="clear"></div>
+
+            <p>*All prices are subject to HST.</p>
         </div>
     </div>
 </section>
@@ -317,6 +307,27 @@
     </div>
 </section>
 
+<section class="subscribe padded" id="subscribe">
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <div id="mc_embed_signup">
+        <form action="//samsspa.us14.list-manage.com/subscribe/post?u=9231f06d622bcc894061ce887&amp;id=c2329a225f" method="post" id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to Sam's Spa mailing list!</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9231f06d622bcc894061ce887_c2329a225f"
+                                                                                          tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+</section>
+
 <footer class="padded">
     <div class="container">
         <div class="left">
@@ -370,13 +381,13 @@
 
         //SMOOTHSCROLLER
 
-        $('.nav-anchor').each(function(index, div){
-            $(div).click(function() {
+        $('.nav-anchor').each(function (index, div) {
+            $(div).click(function () {
 
                 $('body').animate({
                     scrollTop: $($(div).data('id')).offset().top + -110,
                     easing: "swing"
-                }, 1000) ;
+                }, 1000);
 
             });
         });
@@ -387,32 +398,34 @@
 
         // Cache selectors
         var topMenu = $("#navbar"),
-                topMenuHeight = topMenu.outerHeight()+15,
+                topMenuHeight = topMenu.outerHeight() + 15,
         // All list items
                 menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
-                scrollItems = menuItems.map(function(){
+                scrollItems = menuItems.map(function () {
                     var item = $($(this).data("id"));
-                    if (item.length) { return item; }
+                    if (item.length) {
+                        return item;
+                    }
                 });
 
         // Bind to scroll
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             // Get container scroll position
-            var fromTop = $(this).scrollTop()+topMenuHeight;
+            var fromTop = $(this).scrollTop() + topMenuHeight;
 
             // Get id of current scroll item
-            var cur = scrollItems.map(function(){
+            var cur = scrollItems.map(function () {
                 if ($(this).offset().top < fromTop)
                     return this;
             });
             // Get the id of the current element
-            cur = cur[cur.length-1];
+            cur = cur[cur.length - 1];
             var id = cur && cur.length ? cur[0].id : "";
             // Set/remove active class
             menuItems
                     .parent().removeClass("active")
-                    .end().filter("[data-id=#"+id+"]").parent().addClass("active");
+                    .end().filter("[data-id=#" + id + "]").parent().addClass("active");
         });
 
     });
