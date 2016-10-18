@@ -69,6 +69,10 @@ html, body {
     font-family: $secondary-font;
     font-size: 16px;
     line-height: 26px;
+
+    @media #{$mobile} {
+      font-size: 15px;
+    }
   }
 
   .clear {
@@ -80,6 +84,10 @@ html, body {
     margin-top: 0;
     margin-bottom: 15px;
     color: $gold;
+
+    @media #{$mobile} {
+      font-size: 56px;
+    }
 
     &.extra-margin {
       margin-bottom: 45px;
@@ -102,7 +110,12 @@ html, body {
           font-weight: bold;
           line-height: normal;
 
-          &:hover, &:focus, {
+          @media #{$small} {
+            font-size: 28px;
+            padding: 40px 15px;
+          }
+
+          &:hover, &:focus {
             background-color: rgba($pink, 0.2);
             cursor: pointer;
           }
@@ -143,6 +156,14 @@ html, body {
       top: 240px;
       width: 100%;
 
+      @media #{$ltDesktop} {
+        top: 190px;
+      }
+
+      @media #{$mobile} {
+        top: 160px;
+      }
+
       h1 {
         font-family: $primary-font;
         font-size: 120px;
@@ -150,6 +171,14 @@ html, body {
         text-align: center;
         color: white;
         text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+
+        @media #{$ltDesktop} {
+          font-size: 100px;
+        }
+
+        @media #{$mobile} {
+          font-size: 48px;
+        }
       }
     }
 
@@ -174,12 +203,24 @@ html, body {
         background-position: bottom center;
         width: 100%;
         height: 450px;
+
+        @media #{$ltDesktop} {
+          height: 300px;
+        }
+
+        @media #{$mobile} {
+          height: 200px;
+        }
       }
     }
   }
 
   .padded {
     padding: 35px 0;
+
+    @media #{$mobile} {
+      padding: 25px 0;
+    }
   }
 
   .about {
@@ -192,6 +233,10 @@ html, body {
 
     .row {
       display: flex;
+
+      @media #{$mobile} {
+        display: block;
+      }
     }
 
     .located {
@@ -230,6 +275,10 @@ html, body {
 
     p {
       text-align: center;
+
+      @media #{$mobile} {
+        font-size: 13px;
+      }
     }
 
     .service-groups {
@@ -245,6 +294,10 @@ html, body {
       &.left, &.right {
         width: 50%;
         text-align: center;
+
+        @media #{$mobile} {
+          width: 100%;
+        }
       }
 
       &.left {
@@ -261,6 +314,10 @@ html, body {
         font-size: 34px;
         color: $gold;
         line-height: normal;
+
+        @media #{$mobile} {
+          font-size: 28px;
+        }
       }
 
       .disclaimer {
@@ -272,10 +329,18 @@ html, body {
         padding-left: 15px;
         padding-bottom: 25px;
 
+        @media #{$mobile} {
+          padding-left: 0;
+        }
+
         li {
           list-style-type: none;
           padding: 3px 5px 3px 1.5em;
           font-size: 16px;
+
+          @media #{$mobile} {
+            font-size: 14px;
+          }
 
           &:before {
             font-family: FontAwesome;
@@ -387,6 +452,10 @@ html, body {
       width: 60%;
       margin: 15px auto;
 
+      @media #{$mobile} {
+        width: 100%;
+      }
+
       button {
         background-color: $gold;
         color: white;
@@ -408,9 +477,17 @@ html, body {
 
     #mc_embed_signup {
 
+      @media #{$mobile} {
+        margin: 0 15px;
+      }
+
       label {
         font-size: 22px;
         font-weight: normal;
+
+        @media #{$mobile} {
+          font-size: 16px;
+        }
       }
 
       .button {
@@ -437,12 +514,23 @@ html, body {
       float: right;
     }
 
+    .left, .right{
+      @media #{$mobile} {
+        float: none;
+        text-align: center;
+      }
+    }
+
     .social-icon {
       width: 50px;
       height: 50px;
       display: inline-block;
       margin-left: 5px;
       background-size: cover;
+
+      @media #{$mobile} {
+        margin-top: 15px;
+      }
 
       a {
         display: block;

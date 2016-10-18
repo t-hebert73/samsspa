@@ -71,7 +71,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-xs-12">
 
                 <h2 class="main-heading">About</h2>
 
@@ -87,7 +87,7 @@
 
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
                 <div class="bg-container">
                     <div class="outside-salon"></div>
                 </div>
@@ -315,7 +315,7 @@
         <form action="//samsspa.us14.list-manage.com/subscribe/post?u=9231f06d622bcc894061ce887&amp;id=c2329a225f" method="post" id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Subscribe to Sam's Spa mailing list!</label>
+                <label for="mce-EMAIL">Join Our Mailing List</label>
                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9231f06d622bcc894061ce887_c2329a225f"
@@ -368,7 +368,21 @@
             autoplay: true,
             autoplaySpeed: 3000,
             slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 979,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
 
         var $cb_images = $('.cb-gallery-image');
