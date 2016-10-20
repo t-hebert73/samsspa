@@ -286,7 +286,7 @@
             </ul>
         </div>
 
-        <form class="contact-form" method="post" action="/">
+        <form class="contact-form" method="POST" action="/">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
                 <label for="email-input" class="hidden">Email address</label>
@@ -346,6 +346,8 @@
     </div>
 </footer>
 
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -396,7 +398,7 @@
                 });
             });
 
-            $(window).resize(function(){
+            $(window).resize(function () {
                 $.colorbox.resize({
                     width: window.innerWidth > parseInt(cboxOptions.maxWidth) ? cboxOptions.maxWidth : cboxOptions.width,
                     height: window.innerHeight > parseInt(cboxOptions.maxHeight) ? cboxOptions.maxHeight : cboxOptions.height
@@ -453,6 +455,49 @@
                     .end().filter("[data-id=#" + id + "]").parent().addClass("active");
         });
 
+        // CONTACT FORM
+        $('.contact-form').submit(function (event) {
+            event.preventDefault();
+
+            var $form = $(this),
+                    email = $form.find("input[name='email']").val(),
+                    phone = $form.find("input[name='phone']").val(),
+                    message = $form.find("input[name='message']").val(),
+                    url = $form.attr("action"),
+                    alertBox = $('.alerts'),
+                    alerts = alertBox.children('ul');
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $form.serialize(),
+                dataType: 'json',
+                statusCode: {
+                    //laravel
+                    422: function (data) {
+                        alertBox.addClass('alert alert-danger');
+                        alerts.empty();
+                        alertBox.children('p').remove();
+                        $.each(data.responseJSON, function (index, value) {
+                            alerts.append('<li>' + value + '</li>');
+                        });
+                    }
+                }
+            })
+            .done(function (data, textStatus) {
+                alertBox.removeClass();
+                alerts.empty();
+                alertBox.addClass('alerts alert alert-success');
+                alertBox.append('<p>' + data.message + '</p>');
+            })
+
+            .error(function (data, textStatus) {
+                console.log(data);
+                var errors = data.responseText;
+                console.log(errors);
+            });
+
+        });
     });
 </script>
 </body>
