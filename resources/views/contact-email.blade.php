@@ -4,6 +4,4 @@
 <div>Email: {!! $email !!}</div>
 <div>Phone: {!! $phone !!}</div>
 <div>Message: {!! $comment !!}</div>
-
-
 </body>
