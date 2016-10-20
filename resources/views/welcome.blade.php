@@ -347,7 +347,6 @@
 </footer>
 
 
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -484,18 +483,18 @@
                     }
                 }
             })
-            .done(function (data, textStatus) {
-                alertBox.removeClass();
-                alerts.empty();
-                alertBox.addClass('alerts alert alert-success');
-                alertBox.append('<p>' + data.message + '</p>');
-            })
+                    .done(function (data, textStatus) {
+                        alertBox.removeClass();
+                        alerts.empty();
+                        alertBox.addClass('alerts alert alert-success');
+                        alertBox.append('<p>' + data.message + '</p>');
+                    })
 
-            .error(function (data, textStatus) {
-                console.log(data);
-                var errors = data.responseText;
-                console.log(errors);
-            });
+                    .error(function (data, textStatus) {
+                        console.log(data);
+                        var errors = data.responseText;
+                        console.log(errors);
+                    });
 
         });
     });
