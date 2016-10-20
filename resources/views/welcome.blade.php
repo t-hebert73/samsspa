@@ -417,8 +417,7 @@
 
             });
         });
-
-
+        
         //SCROLL ACTIVE
         //stackoverflow
 
