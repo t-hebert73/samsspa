@@ -406,7 +406,6 @@
         }
 
         //SMOOTHSCROLLER
-
         $('.nav-anchor').each(function (index, div) {
             $(div).click(function () {
 
@@ -417,7 +416,7 @@
 
             });
         });
-        
+
         //SCROLL ACTIVE
         //stackoverflow
 
