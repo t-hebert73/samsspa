@@ -253,9 +253,7 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     <div class="gallery-help">Click Image To Enlarge</div>
                 </div>
             </div>
