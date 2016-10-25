@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Sam's Spa - 133 Front Street North, Thorold Ontario</title>
+    <meta name="description" content="As a proud user of Aveda products, I pride myself on providing exclusive treatments for women and men in a relaxed salon environment. I offer
+                    nail services, customized facials, hair removal and eyelash extensions. I am committed to excellence and exceeding my clients
+                    expectations.">
+    <meta name="keywords" content="Sam's Spa, spa, nails, manicure, pedicure, gel nails, bio seaweed gel, Aveda, facials, lash extensions, hair removal, waxing, Alesco salon">
+    <meta name="author" content="Sam's Spa">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
