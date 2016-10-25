@@ -496,5 +496,17 @@
         });
     });
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.samsspa.ca",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+1 289-696-1586",
+    "contactType": "customer service"
+  }]
+}
+</script>
 </body>
 </html>
