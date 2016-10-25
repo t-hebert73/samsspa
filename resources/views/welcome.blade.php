@@ -260,9 +260,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </section>
 
 <section class="contact padded" id="contact">
