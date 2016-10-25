@@ -9,7 +9,7 @@
     <meta name="description" content="As a proud user of Aveda products, I pride myself on providing exclusive treatments for women and men in a relaxed salon environment. I offer
                     nail services, customized facials, hair removal and eyelash extensions. I am committed to excellence and exceeding my clients
                     expectations.">
-    <meta name="keywords" content="Sam's Spa, spa, nails, manicure, pedicure, gel nails, bio seaweed gel, Aveda, facials, lash extensions, hair removal, waxing, Alesco salon">
+    <meta name="keywords" content="Sam's Spa, Sams spa, niagara, thorold, spa, nails, manicure, pedicure, gel nails, bio seaweed gel, Aveda, facials, lash extensions, hair removal, waxing, Alesco salon">
     <meta name="author" content="Sam's Spa">
 
     <!-- Bootstrap -->
