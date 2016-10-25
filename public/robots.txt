@@ -1,2 +1,2 @@
+Sitemap: http://www.samsspa.ca/sitemap.xml
 User-agent: *
-Disallow:
