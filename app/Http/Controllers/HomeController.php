@@ -22,14 +22,14 @@ class HomeController extends Controller
             'message' => 'required'
         ]);
 
-        $toEmail = 't.hebert73@gmail.com';
-        $toName = 'Pulse';
         $data = $request->all();
+        $toEmail = $data['email'];
+        $toName = $toEmail;
 
         Mail::send(['html' => 'contact-email'], ['email' => $data['email'], 'phone' => $data['phone'], 'comment' => $data['message']], function($message) use ($toEmail, $toName)
         {
             $message->to($toEmail, $toName);
-            $message->from('t.hebert73@gmail.com');
+            $message->from('samsspathorold@gmail.com');
 
             $message->subject('Contact Form Submission');
         });
