@@ -16,20 +16,20 @@ class HomeController extends Controller
      * @return Response
      */
     public function sendContactForm(Request $request){
-        
+
         $this->validate($request, [
             'email' => 'required',
             'message' => 'required'
         ]);
 
         $data = $request->all();
-        $toEmail = 'samsspathorold@gmail.com';
+        $toEmail = 'venditti.samantha@gmail.com';
         $toName = 'Sam Venditti';
 
         Mail::send(['html' => 'contact-email'], ['email' => $data['email'], 'phone' => $data['phone'], 'comment' => $data['message']], function($message) use ($toEmail, $toName)
         {
             $message->to($toEmail, $toName);
-            $message->from('samsspathorold@gmail.com');
+            $message->from('samsspathorold@gmail.com', "Sam's Spa");
 
             $message->subject('Contact Form Submission');
         });
