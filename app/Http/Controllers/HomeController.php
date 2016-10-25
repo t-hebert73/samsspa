@@ -23,8 +23,8 @@ class HomeController extends Controller
         ]);
 
         $data = $request->all();
-        $toEmail = $data['email'];
-        $toName = $toEmail;
+        $toEmail = 'samsspathorold@gmail.com';
+        $toName = 'Sam Venditti';
 
         Mail::send(['html' => 'contact-email'], ['email' => $data['email'], 'phone' => $data['phone'], 'comment' => $data['message']], function($message) use ($toEmail, $toName)
         {
