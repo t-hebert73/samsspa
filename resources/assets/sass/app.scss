@@ -173,19 +173,18 @@ html, body {
   }
 
   .banner {
-    margin-top: 110px;
 
     .overlay-text {
       position: absolute;
-      top: 240px;
+      top: 310px;
       width: 100%;
 
       @media #{$ltDesktop} {
-        top: 190px;
+        top: 260px;
       }
 
       @media #{$mobile} {
-        top: 160px;
+        top: 290px;
       }
 
       h1 {
@@ -498,6 +497,9 @@ html, body {
 
   .subscribe {
     background-color: transparentize($gold, 0.3);
+    margin-top: 110px;
+    padding: 15px 0;
+
 
     #mc_embed_signup {
 
@@ -513,9 +515,21 @@ html, body {
       label {
         font-size: 22px;
         font-weight: normal;
+        display: inline-block;
+        margin: 0;
+        padding: 6px 0;
 
         @media #{$mobile} {
           font-size: 16px;
+        }
+      }
+
+      input{
+        margin-top: 5px;
+        margin-left: 15px;
+
+        @media #{$mobile} {
+          width: 50%;
         }
       }
 

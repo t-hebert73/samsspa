@@ -59,6 +59,27 @@
     </nav>
 </header>
 
+<section class="subscribe padded" id="subscribe">
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <div id="mc_embed_signup">
+        <form action="//samsspa.us14.list-manage.com/subscribe/post?u=9231f06d622bcc894061ce887&amp;id=c2329a225f" method="post" id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Join Our Mailing List</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9231f06d622bcc894061ce887_c2329a225f"
+                                                                                          tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+</section>
+
 <section class="banner" id="top_banner">
     <div class="widget banner slickslider">
         <div class="image">
@@ -306,27 +327,6 @@
 
 
     </div>
-</section>
-
-<section class="subscribe padded" id="subscribe">
-
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <div id="mc_embed_signup">
-        <form action="//samsspa.us14.list-manage.com/subscribe/post?u=9231f06d622bcc894061ce887&amp;id=c2329a225f" method="post" id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Join Our Mailing List</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9231f06d622bcc894061ce887_c2329a225f"
-                                                                                          tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-        </form>
-    </div>
-
-    <!--End mc_embed_signup-->
 </section>
 
 <footer class="padded">

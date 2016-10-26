@@ -73,33 +73,31 @@ html, body {
       display: block;
       background-repeat: no-repeat;
       margin: 5px 10px; }
-  html .banner, body .banner {
-    margin-top: 110px; }
-    html .banner .overlay-text, body .banner .overlay-text {
-      position: absolute;
-      top: 240px;
-      width: 100%; }
+  html .banner .overlay-text, body .banner .overlay-text {
+    position: absolute;
+    top: 310px;
+    width: 100%; }
+    @media (max-width: 979px) {
+      html .banner .overlay-text, body .banner .overlay-text {
+        top: 260px; } }
+    @media (max-width: 767px) {
+      html .banner .overlay-text, body .banner .overlay-text {
+        top: 290px; } }
+    html .banner .overlay-text h1, body .banner .overlay-text h1 {
+      font-family: "Tangerine", cursive;
+      font-size: 120px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3); }
       @media (max-width: 979px) {
-        html .banner .overlay-text, body .banner .overlay-text {
-          top: 190px; } }
+        html .banner .overlay-text h1, body .banner .overlay-text h1 {
+          font-size: 100px; } }
       @media (max-width: 767px) {
-        html .banner .overlay-text, body .banner .overlay-text {
-          top: 160px; } }
-      html .banner .overlay-text h1, body .banner .overlay-text h1 {
-        font-family: "Tangerine", cursive;
-        font-size: 120px;
-        font-weight: bold;
-        text-align: center;
-        color: white;
-        text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3); }
-        @media (max-width: 979px) {
-          html .banner .overlay-text h1, body .banner .overlay-text h1 {
-            font-size: 100px; } }
-        @media (max-width: 767px) {
-          html .banner .overlay-text h1, body .banner .overlay-text h1 {
-            font-size: 48px; } }
-    html .banner .slickslider, body .banner .slickslider {
-      /*
+        html .banner .overlay-text h1, body .banner .overlay-text h1 {
+          font-size: 48px; } }
+  html .banner .slickslider, body .banner .slickslider {
+    /*
       .stock-2 {
         background-image: url('../images/stock-spa2.jpg');
       }
@@ -110,19 +108,19 @@ html, body {
         background-image: url('../images/stock-spa4.jpg');
       }
       */ }
-      html .banner .slickslider .stock-1, body .banner .slickslider .stock-1 {
-        background-image: url("../images/main-banner.jpg"); }
-      html .banner .slickslider .cover, body .banner .slickslider .cover {
-        background-size: cover;
-        background-position: bottom center;
-        width: 100%;
-        height: 450px; }
-        @media (max-width: 979px) {
-          html .banner .slickslider .cover, body .banner .slickslider .cover {
-            height: 300px; } }
-        @media (max-width: 767px) {
-          html .banner .slickslider .cover, body .banner .slickslider .cover {
-            height: 200px; } }
+    html .banner .slickslider .stock-1, body .banner .slickslider .stock-1 {
+      background-image: url("../images/main-banner.jpg"); }
+    html .banner .slickslider .cover, body .banner .slickslider .cover {
+      background-size: cover;
+      background-position: bottom center;
+      width: 100%;
+      height: 450px; }
+      @media (max-width: 979px) {
+        html .banner .slickslider .cover, body .banner .slickslider .cover {
+          height: 300px; } }
+      @media (max-width: 767px) {
+        html .banner .slickslider .cover, body .banner .slickslider .cover {
+          height: 200px; } }
   html .padded, body .padded {
     padding: 35px 0; }
     @media (max-width: 767px) {
@@ -278,16 +276,27 @@ html, body {
       html .contact .contact-form textarea, body .contact .contact-form textarea {
         min-height: 150px; }
   html .subscribe, body .subscribe {
-    background-color: rgba(179, 153, 21, 0.7); }
+    background-color: rgba(179, 153, 21, 0.7);
+    margin-top: 110px;
+    padding: 15px 0; }
     @media (max-width: 767px) {
       html .subscribe #mc_embed_signup, body .subscribe #mc_embed_signup {
         margin: 0 15px; } }
     html .subscribe #mc_embed_signup label, body .subscribe #mc_embed_signup label {
       font-size: 22px;
-      font-weight: normal; }
+      font-weight: normal;
+      display: inline-block;
+      margin: 0;
+      padding: 6px 0; }
       @media (max-width: 767px) {
         html .subscribe #mc_embed_signup label, body .subscribe #mc_embed_signup label {
           font-size: 16px; } }
+    html .subscribe #mc_embed_signup input, body .subscribe #mc_embed_signup input {
+      margin-top: 5px;
+      margin-left: 15px; }
+      @media (max-width: 767px) {
+        html .subscribe #mc_embed_signup input, body .subscribe #mc_embed_signup input {
+          width: 50%; } }
     html .subscribe #mc_embed_signup .button, body .subscribe #mc_embed_signup .button {
       background-color: white;
       color: black;
