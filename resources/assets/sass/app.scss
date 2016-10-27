@@ -152,13 +152,13 @@ html, body {
     }
 
     .button {
-      background-color: $gold;
+      background-color: darken($pink, 15%);
       color: white;
       font-size: 16px;
       border: 0;
 
       &:hover {
-        background-color: darken($gold, 5%);
+        background-color: darken($pink, 20%);
       }
     }
   }
@@ -571,13 +571,13 @@ html, body {
       }
 
       button {
-        background-color: $gold;
+        background-color: darken($pink, 15%);
         color: white;
         font-size: 16px;
-        min-width: 100px;
+        min-width: 120px;
 
         &:hover {
-          background-color: darken($gold, 5%);
+          background-color: darken($pink, 20%);
         }
       }
 
@@ -587,13 +587,12 @@ html, body {
     }
   }
 
+  /*
   .subscribe {
     background-color: transparentize(rgba(222, 193, 47, 0.7), 0.3);
     margin-top: 110px;
     padding: 15px 0;
-
-
-  }
+  }*/
 
   footer {
     background-color: black;

@@ -1,5 +1,11 @@
 html, body {
-  height: 100%; }
+  height: 100%;
+  /*
+  .subscribe {
+    background-color: transparentize(rgba(222, 193, 47, 0.7), 0.3);
+    margin-top: 110px;
+    padding: 15px 0;
+  }*/ }
   html h1, html h2, html h3, html h4, html h5, body h1, body h2, body h3, body h4, body h5 {
     font-family: "Tangerine", cursive;
     text-align: center; }
@@ -67,12 +73,12 @@ html, body {
           position: static;
           display: block; } }
     html #mc_embed_signup .button, body #mc_embed_signup .button {
-      background-color: #d0b426;
+      background-color: #ff9999;
       color: white;
       font-size: 16px;
       border: 0; }
       html #mc_embed_signup .button:hover, body #mc_embed_signup .button:hover {
-        background-color: #baa122; }
+        background-color: #ff7f7f; }
   html .navbar, body .navbar {
     background-color: white; }
     @media (max-width: 979px) {
@@ -337,18 +343,14 @@ html, body {
         html .contact .contact-form, body .contact .contact-form {
           width: 100%; } }
       html .contact .contact-form button, body .contact .contact-form button {
-        background-color: #d0b426;
+        background-color: #ff9999;
         color: white;
         font-size: 16px;
-        min-width: 100px; }
+        min-width: 120px; }
         html .contact .contact-form button:hover, body .contact .contact-form button:hover {
-          background-color: #baa122; }
+          background-color: #ff7f7f; }
       html .contact .contact-form textarea, body .contact .contact-form textarea {
         min-height: 150px; }
-  html .subscribe, body .subscribe {
-    background-color: rgba(222, 193, 47, 0.4);
-    margin-top: 110px;
-    padding: 15px 0; }
   html footer, body footer {
     background-color: black;
     color: #e6e6e6; }
