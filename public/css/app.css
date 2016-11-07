@@ -37,12 +37,13 @@ html, body {
     @media (max-width: 767px) {
       html #mc_embed_signup, body #mc_embed_signup {
         float: none;
-        width: 100%;
         display: block;
-        background-color: #d0b426;
         text-align: center;
-        margin: 10px 0 0;
-        padding-bottom: 0; } }
+        margin: 10px -15px 0;
+        padding-bottom: 0;
+        background-color: #f0f0f5; }
+        html #mc_embed_signup input[type="submit"], body #mc_embed_signup input[type="submit"] {
+          margin: 10px 0; } }
     html #mc_embed_signup div, body #mc_embed_signup div {
       float: right; }
       @media (max-width: 767px) {
