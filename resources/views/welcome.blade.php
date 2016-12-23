@@ -100,7 +100,7 @@
                 <h2 class="main-heading">About</h2>
 
                 <p>As a proud user of Aveda products, I pride myself on providing exclusive treatments for women and men in a relaxed salon environment. I offer
-                    nail services, customized facials, hair removal and eyelash extensions. I am committed to excellence and exceeding my clients
+                    nail services, customized facials and hair removal. I am committed to excellence and exceeding my clients
                     expectations. </p>
 
                 <p class="located">Located in Thorold, in Alesco Salon. Call today to book your personalized service.</p>
@@ -161,6 +161,7 @@
 
             <div class="service-group right">
 
+                <!--
                 <div class="service">
                     <div class="service-label">Eyelash Extensions</div>
 
@@ -169,8 +170,8 @@
                         <li>Fill (3-4 weeks) – $40</li>
                         <li>Fill (5+ weeks) – $60</li>
                     </ul>
-
                 </div>
+                -->
 
                 <div class="service">
                     <div class="service-label">Nail Services</div>
