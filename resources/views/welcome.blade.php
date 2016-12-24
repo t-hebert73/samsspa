@@ -247,6 +247,7 @@
                             </div>
                         </div>
 
+                        <!--
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-5 cover">
@@ -262,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        -->
                         <div class="image">
                             <div class="slide-content">
                                 <div class="salon-6 cover">
