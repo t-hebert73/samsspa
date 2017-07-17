@@ -297,7 +297,7 @@
 
             <div class="company">Sam's Spa</div>
             <div class="address">133 Front Street North, Thorold, Ontario</div>
-            <div class="phone">289-696-1586</div>
+            <div class="phone">995-227-6060</div>
         </div>
 
         <div class="any-questions">Have any questions or want more information? Use the form below to email me and I will get back to you.</div>
@@ -335,7 +335,7 @@
             <div class="company">Sam's Spa</div>
             <div class="location">Alesco Salon</div>
             <div class="address">133 Front Street North, Thorold, Ontario</div>
-            <div class="phone">289-696-1586</div>
+            <div class="phone">995-227-6060</div>
         </div>
 
         <div class="right">
