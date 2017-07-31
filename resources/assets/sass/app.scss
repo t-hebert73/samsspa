@@ -407,6 +407,14 @@ html, body {
 
     .service-group {
 
+      .service{
+        padding-bottom: 25px;
+
+        .service-disclaimer{
+          font-size: 14px;
+        }
+      }
+
       &.left, &.right {
         width: 50%;
         text-align: center;
@@ -443,7 +451,6 @@ html, body {
 
       ul {
         padding-left: 15px;
-        padding-bottom: 25px;
 
         @media #{$mobile} {
           padding-left: 0;

@@ -134,10 +134,12 @@
                     <div class="service-label">AVEDA Customized Facials</div>
 
                     <ul>
-                        <li>30 minutes – $30</li>
-                        <li>60 minutes – $60</li>
-                        <li>90 minutes – $90</li>
+                        <li>30 minutes – $35</li>
+                        <li>60 minutes – $65</li>
+                        <li>90 minutes – $95</li>
                     </ul>
+
+                    <p class="service-disclaimer">Add a plant peel to any facial for $15</p>
 
                 </div>
 
@@ -145,13 +147,14 @@
                     <div class="service-label">Hair Removal</div>
 
                     <ul>
-                        <li>Eyebrows – $12</li>
+                        <li>Eyebrow Design – $15</li>
+                        <li>Eyebrow Cleanup - $12</li>
                         <li>Lip – $10</li>
                         <li>Chin – $10+</li>
-                        <li>Underarms – $15</li>
-                        <li>Arms – $30</li>
-                        <li>Half Legs – $30</li>
-                        <li>Full Legs – $50</li>
+                        <li>Underarms – $17</li>
+                        <li>Arms – $35</li>
+                        <li>Half Legs – $33</li>
+                        <li>Full Legs – $53</li>
                         <li>Back – $40+</li>
                         <li>Chest – $40+</li>
                     </ul>
@@ -177,16 +180,23 @@
                     <div class="service-label">Nail Services</div>
 
                     <ul>
-                        <li>Mini Manicure (25 min) – $10</li>
-                        <li>Manicure (45 min) – $20</li>
-                        <li>Spa Manicure (65 min) – $30</li>
-                        <li>Mini Pedicure (25 min) – $25</li>
-                        <li>Pedicure (55 min) – $35</li>
-                        <li>Spa Pedicure (75 min) – $45</li>
-                        <li>Manicure &amp; Pedicure - $45</li>
-                        <li>Spa Manicure &amp; Spa Pedicure - $65</li>
-                        <li>Gel Manicure (60 to 90 min) - $35</li>
-                        <li>Gel Pedicure (60 to 90 min) - $50</li>
+                        <li>Shape and Polish - $15</li>
+                        <li>Manicure - $22</li>
+                        <li>Spa Manicure - $32</li>
+                        <li>Pedicure - $40</li>
+                        <li>Spa Pedicure - $50</li>
+                        <li>Gel Manicure - $40</li>
+                        <li>Gel Pedicure - $60</li>
+                        <li>Gel Application - $20</li>
+                    </ul>
+                </div>
+
+                <div class="service">
+                    <div class="service-label">Make Up</div>
+
+                    <ul>
+                        <li>Application - $45</li>
+                        <li>False Lashes - $15</li>
                     </ul>
                 </div>
             </div>
